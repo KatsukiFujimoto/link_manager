@@ -1,0 +1,38 @@
+{
+    "manifest_version": 2,
+    "name": "Link Manager",
+    "version": "0.0.1",
+    "description": "Chromeのヘッダーにスペースを取ることなく、複数のリンクを管理でき、リンクへ移動できる拡張機能",
+    "icons": {
+        "48": "icon.png"
+    },
+    "browser_action": {
+        "default_icon": "icon.png",
+        "default_title": "Link Manager",
+        "default_popup": "popup.html"
+    },
+    "content_security_policy": "script-src 'self' https://code.jquery.com https://cdnjs.cloudflare.com; object-src 'self'",
+    "commands": {
+        "show_favorites": {
+            "suggested_key": {
+                "default": "Ctrl+I",
+                "windows": "Ctrl+I"
+            },
+            "description": "Show favorite links"
+        },
+        "focus_search_bar": {
+            "suggested_key": {
+                "default": "Ctrl+S",
+                "windows": "Ctrl+S"
+            },
+            "description": "Focus on the search bar"
+        },
+        "create_link_form": {
+            "suggested_key": {
+                "default": "Ctrl+N",
+                "windows": "Ctrl+N"
+            },
+            "description": "Open or close the form to create a link"
+        }
+    }
+}

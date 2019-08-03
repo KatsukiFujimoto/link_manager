@@ -1,0 +1,204 @@
+/* ===================
+ Whole
+====================*/
+body {
+    padding: 0;
+    margin: 0;
+    max-height: 600px;
+    width: 400px;
+}
+
+div.container {
+    padding: 5px;
+}
+
+/* ===================
+ Header
+====================*/
+header {
+    background-color: #ddd;
+}
+
+header input {
+    border-radius: 5px;
+    width: 280px;
+}
+
+#keyword {
+    display: inline-block;
+}
+
+header div.actions {
+    position: relative;
+}
+
+header i.fa-plus-circle {
+    position: absolute;
+    bottom: -1px;
+    color: blue;
+    font-size: 20px;
+}
+
+header i.fa-star {
+    font-size: 20px;
+}
+
+header i.fa-file-csv {
+    position: absolute;
+    right: -7px;
+    bottom: -1px;
+    font-size: 20px;
+}
+
+header i.fa-trash {
+    position: absolute;
+    right: -32px;
+    bottom: -2px;
+    font-size: 20px;
+}
+
+/* ===================
+ Link Lists
+====================*/
+#linkLists {
+    padding-left: 0;
+    height: 430px;
+    margin: 0 0 8px;
+    overflow: scroll;
+}
+
+#linkLists::-webkit-scrollbar{
+    width: 5px;
+    height: 0;
+}
+
+#linkLists::-webkit-scrollbar-track{
+    background: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 0 0 2px #777;
+}
+
+#linkLists::-webkit-scrollbar-thumb{
+    background: #aaa;
+    border-radius: 10px;
+    box-shadow: none;
+}
+
+.link-list {
+    padding: 4px 0;
+    list-style: none;
+    border-bottom: solid 1px #bbb;
+}
+
+.linkFavicon {
+    display: inline-block;
+    vertical-align: middle;
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.linkUrl {
+    display: inline-block;
+    text-decoration: none;
+    width: 320px;
+}
+
+.linkName {
+    display:inline-block;
+    vertical-align: middle;
+    color: black;
+    line-height: 100%;
+    font-weight: bold;
+    width: 150px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.linkTab {
+    display: inline-block;
+    vertical-align: middle;
+    background-color: rgb(112, 209, 233);
+    color: white;
+    padding: 0 5px;
+    border-radius: 5px;
+    width: 120px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+div.actions {
+    display: inline-block;
+    vertical-align: middle;
+    width: 60px;
+}
+
+/* ===================
+ SaveForm
+====================*/
+#linkSaveForm {
+    display: none;
+    background-color: #ddd;
+}
+
+#linkSaveForm input {
+    border-radius: 5px;
+}
+
+#urlInput {
+    width: 320px;
+}
+
+#submitBtn {
+    background-color: #ccc;
+    border-radius: 5px;
+}
+
+/* ===================
+ CSV
+====================*/
+#csvBox {
+    display: none;
+    background-color: #ddd;
+}
+
+div.export {
+    display: inline-block;
+    width: 160px;
+}
+
+div.upload {
+    display: inline-block;
+    width: 160px;
+}
+
+#csvUpload {
+    display: none;
+}
+
+.csv {
+    display: inline-block;
+    padding: 1px 6px;
+    border-width: 2px;
+    border-style: outset;
+    border-color: buttonface;
+    border-image: initial;
+    background-color: #ccc;
+    border-radius: 5px;
+    width: 145px;
+}
+
+/* ===================
+ Commons
+====================*/
+.favorite {
+    display: none;
+    color: rgb(230, 59, 59);
+}
+
+.nonFavorite {
+    color: #aaa;
+}

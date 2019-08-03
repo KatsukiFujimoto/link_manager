@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html lang="ja">
+    <head>
+        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+        <script
+            src="https://code.jquery.com/jquery-3.4.1.min.js"
+            integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+            crossorigin="anonymous">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-csv/1.0.5/jquery.csv.js"></script>
+        <script src="popup.js"></script>
+        <script src="csv.js"></script>
+    </head>
+    <body>
+        <header>
+            <div class="container">
+                <form id="linkSearchForm">
+                    <input id="searchKwd" type="text" placeholder="Search by tag or name" autofocus />
+                    <div class="actions">
+                        <a class="nonFavorite nonFavorite-null" data-id="null"><i class="far fa-star fa-lg"></i></a>
+                        <a class="favorite favorite-null" data-id="null"><i class="fas fa-star fa-lg"></i></a>
+                        <a id="createForm"><i class="fas fa-plus-circle"></i></a>
+                        <a id="csvBtn"><i class="fas fa-file-csv"></i></a>
+                        <a id="resetData"><i class="fas fa-trash"></i></a>
+                    </div>
+                </form>
+            </div>
+        </header>
+        <div class="container">
+            <div>
+                <ul id="linkLists">
+                </ul>
+            </div>
+        </div>
+        <form id="linkSaveForm">
+            <div class="container">
+                <input id="urlInput" type="text" placeholder="Link Url" />
+                <input id="nameInput" type="text" placeholder="Link Name" />
+                <input id="tabInput" type="text" placeholder="Link Tab" />
+                <input id="idInput" type="hidden" />
+                <input id="submitBtn" type="submit" value="作成">
+            </div>
+        </form>
+        <div id="csvBox">
+            <div class="container">
+                <div class="export">
+                    <span class="csv" id="csvExport">CSVエクスポート</span>
+                </div>
+                <div class="upload">
+                    <label class="csv" for="csvUpload">CSVアップロード</label>
+                    <input type="file" name="File Upload" id="csvUpload" accept=".csv" />
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
